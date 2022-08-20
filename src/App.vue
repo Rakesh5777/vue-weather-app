@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen font-roboto bg-weather-primary">
     <Header />
     <RouterView />
   </div>
@@ -9,6 +9,3 @@
 import { RouterView } from "vue-router";
 import Header from "./components/Header.vue";
 </script>
-
-<style lang="scss" scoped>
-</style>
