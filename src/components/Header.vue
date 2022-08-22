@@ -11,7 +11,7 @@
       </RouterLink>
       <div class="flex flex-1 justify-end gap-3">
         <i
-          v-if="!route.query?.id"
+          v-if="route.path.includes('city-view') && !route.query?.id"
           @click="addCity"
           class="fa-solid fa-plus text-xl hover:text-weather-secondary duration-150 cursor-pointer"
         ></i>
@@ -89,5 +89,4 @@ const addCity = () => {
   query.id = locationObj.id;
   router.replace({ query });
 };
-console.log(uid());
 </script>
